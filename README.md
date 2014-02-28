@@ -1,6 +1,6 @@
 # Apaxy
 
-My personal modification of Adam Whitcroft's [Apaxy](https://github.com/AdamWhitcroft/Apaxy).
+My personal modification of Adam Whitcroft's [Apaxy](https://github.com/AdamWhitcroft/Apaxy), an Apache directory listing theme.
 
 ## Notable Differences
 
