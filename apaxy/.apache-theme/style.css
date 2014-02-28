@@ -5,14 +5,13 @@
     Theme name: Apaxy
     Theme author: @adamwhitcroft
 \*------------------------------------*/
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
-/* Have to use @import for the font, as you can only specify a single stylesheet */
+
 * {
 	margin:0;
 	padding:0;
 	-webkit-box-sizing:border-box;
 	   -moz-box-sizing:border-box;
-	       box-sizing: border-box; 
+	       box-sizing: border-box;
 }
 
 html {
@@ -22,7 +21,7 @@ html {
 	color:#61666c;
 	font-weight:400;
 	font-size:1em;
-	font-family:'Open Sans', sans-serif;
+	font-family:'Helvetica Neue', sans-serif;
 	line-height:2em;
 }
 body {
@@ -30,7 +29,7 @@ body {
 	-webkit-backface-visibility:hidden;
 }
 code {
-	font-family:consolas,monospace;	
+	font-family:consolas,monospace;
 }
 a {
 	color:#61666c;
@@ -62,7 +61,7 @@ a:hover {
 table {
 	width:100%;
 	border-collapse:collapse;
-	font-size:.875em;
+	font-size: 16px;
 }
 tr {
 	outline:0;
@@ -73,7 +72,7 @@ tr:hover td {
 }
 th {
 	text-align:left;
-	font-size:.75em;
+	font-size: 16px;
 	padding-right:20px;
 }
 /* 2nd Column: Filename */

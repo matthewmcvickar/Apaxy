@@ -1,0 +1,61 @@
+# Apaxy by @adamwhitcroft
+# Modifications by Matthew McVickar.
+
+# Enable indexing.
+Options +Indexes
+
+# Index options.
+IndexOptions +Charset=UTF-8 +FancyIndexing +IgnoreCase +FoldersFirst +XHTML +HTMLTable +SuppressRules +SuppressDescription +NameWidth=*
+
+# Hide the .apache-theme directory.
+IndexIgnore .htaccess /.apache-theme
+
+# General icons (blank, directory, parent directory)
+
+AddIcon /.apache-theme/icons/blank.png ^^BLANKICON^^
+AddIcon /.apache-theme/icons/folder.png ^^DIRECTORY^^
+AddIcon /.apache-theme/icons/folder-home.png ..
+
+# File type icons.
+
+AddIcon /.apache-theme/icons/audio.png .aif .iff .m3u .m4a .mid .mp3 .mpa .ra .wav .wma .f4a .f4b .oga .ogg
+AddIcon /.apache-theme/icons/bin.png .bin
+AddIcon /.apache-theme/icons/c.png .c
+AddIcon /.apache-theme/icons/calc.png .xlsx .xlsm .xltx .xltm .xlam .xlr .xls .csv
+AddIcon /.apache-theme/icons/css.png .css
+AddIcon /.apache-theme/icons/deb.png .deb
+AddIcon /.apache-theme/icons/doc.png .doc .docx .docm .dot .dotx .dotm .log .msg .odt .pages .rtf .tex .wpd .wps
+AddIcon /.apache-theme/icons/draw.png .svg
+AddIcon /.apache-theme/icons/eps.png .ai .eps
+AddIcon /.apache-theme/icons/gif.png .gif
+AddIcon /.apache-theme/icons/html.png .html .xhtml .shtml .htm
+AddIcon /.apache-theme/icons/ico.png .ico
+AddIcon /.apache-theme/icons/java.png .jar
+AddIcon /.apache-theme/icons/jpg.png .jpg .jpeg
+AddIcon /.apache-theme/icons/js.png .js .json
+AddIcon /.apache-theme/icons/markdown.png .md
+AddIcon /.apache-theme/icons/package.png .pkg .dmg
+AddIcon /.apache-theme/icons/pdf.png .pdf
+AddIcon /.apache-theme/icons/php.png .php .phtml
+AddIcon /.apache-theme/icons/png.png .png
+AddIcon /.apache-theme/icons/ps.png .ps
+AddIcon /.apache-theme/icons/psd.png .psd
+AddIcon /.apache-theme/icons/rar.png .rar
+AddIcon /.apache-theme/icons/rb.png .rb
+AddIcon /.apache-theme/icons/rpm.png .rpm
+AddIcon /.apache-theme/icons/rss.png .rss
+AddIcon /.apache-theme/icons/sql.png .sql
+AddIcon /.apache-theme/icons/tiff.png .tiff
+AddIcon /.apache-theme/icons/text.png .txt .nfo
+AddIcon /.apache-theme/icons/video.png .asf .asx .avi .flv .mkv .mov .mp4 .mpg .rm .srt .swf .vob .wmv .m4v .f4v .f4p .ogv
+AddIcon /.apache-theme/icons/xml.png .xml
+AddIcon /.apache-theme/icons/zip.png .zip
+DefaultIcon /.apache-theme/icons/default.png
+
+# Theme files.
+HeaderName /.apache-theme/header.html
+ReadmeName /.apache-theme/footer.html
+IndexStyleSheet "/.apache-theme/style.css"
+
+# Favicon
+RewriteRule ^favicon.ico /.apache-theme/favicon.ico [NC,L]
