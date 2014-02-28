@@ -12,4 +12,5 @@ My personal modification of Adam Whitcroft's [Apaxy](https://github.com/AdamWhit
 
 ## Wishlist
 
+- SASS instead of CSS.
 - Retina-ready icons.
